@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Camera Feed</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .btn-lg {
+        margin-top: 20px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select Live Feed Option</h1>
+      <p>
+        Please choose between using your laptop camera or providing an RTSP URL
+        for CCTV feed.
+      </p>
+      <div class="row">
+        <div class="col">
+          <a
+            href="{{ url_for('video_feed_laptop') }}"
+            class="btn btn-primary btn-lg"
+            >Laptop Camera Feed</a
+          >
+        </div>
+        <div class="col">
+          <a href="{{ url_for('feed') }}" class="btn btn-success btn-lg"
+            >RTSP CCTV Feed</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

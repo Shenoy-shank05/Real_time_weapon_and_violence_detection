@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter RTSP URL</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        margin-top: 100px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter CCTV RTSP URL</h1>
+      <form method="POST" action="/feed">
+        <div class="form-group">
+          <label for="rtsp_url">RTSP URL:</label>
+          <input
+            type="text"
+            id="rtsp_url"
+            name="rtsp_url"
+            class="form-control"
+            placeholder="rtsp://username:password@ip:port/stream_path"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Set CCTV Feed</button>
+      </form>
+    </div>
+  </body>
+</html>
