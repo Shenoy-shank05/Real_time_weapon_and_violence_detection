@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suraksha-dhi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-900 text-white scroll-smooth overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white fixed top-0 w-full z-10">
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <h1 class="text-xl font-bold">Suraksha-dhi</h1>
+        <nav class="flex-1">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            <li><a href="/Login.html" class="hover:text-gray-400">Login</a></li>
+            <li><a href="/Signup.html" class="hover:text-gray-400">Signup</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+<section
+id="home"
+class="relative flex items-center justify-center h-screen bg-cover bg-center"
+style="background-image: url('image.png');"
+>
+<!-- Blur effect overlay -->
+<div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+
+<div class="relative z-10 text-center p-6 bg-gray-800 bg-opacity-60 rounded-lg">
+  <h2 class="text-4xl sm:text-5xl font-bold mb-4">PROTECTING YOU <br />in real time</h2>
+  <p class="text-lg mb-6">Ensure safety with our real-time threat detection system.<br />Stay ahead with instant alerts and smart monitoring to protect your community.</p>
+  <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+    Get Started
+  </button>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="max-w-3xl mb-8">We are dedicated to enhancing public safety through innovative technology. Our real-time threat detection system leverages advanced machine learning and computer vision to monitor public spaces, ensuring swift response to potential threats.</p>
+      <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+      <p class="max-w-3xl">At Suraksha-Dhi, we believe safety is a right, not a privilege. Our innovative real-time threat detection system empowers communities with the tools they need to stay secure.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="min-h-screen bg-gray-800 flex flex-col items-center justify-center p-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="bg-gray-700 text-white w-72 h-80 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center transition-transform transform hover:scale-105">
+          <img src="/assets/bell.png" alt="Alert hub" class="w-16 h-16 mb-4"/>
+          <h3 class="text-xl font-bold">Alert Hub</h3>
+          <p class="mt-2">Stay notified with real-time alerts and updates.</p>
+        </div>
+        <div class="bg-gray-700 text-white w-72 h-80 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center transition-transform transform hover:scale-105">
+          <img src="/assets/eye.png" alt="24/7 Surveillance" class="w-16 h-16 mb-4"/>
+          <h3 class="text-xl font-bold">Surveillance Shield</h3>
+          <p class="mt-2">24/7 surveillance to keep you safe and secure.</p>
+        </div>
+        <div class="bg-gray-700 text-white w-72 h-80 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center transition-transform transform hover:scale-105">
+          <img src="/assets/shield.png" alt="Violence Guard" class="w-16 h-16 mb-4"/>
+          <h3 class="text-xl font-bold">Violence Guard</h3>
+          <p class="mt-2">Protection against potential threats and violence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+      <form class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <input type="text" placeholder="Enter your name" required class="w-full p-3 mb-4 text-gray-900 rounded" />
+        <input type="email" placeholder="Enter your email" required class="w-full p-3 mb-4 text-gray-900 rounded" />
+        <textarea placeholder="Your message" required class="w-full p-3 mb-4 text-gray-900 rounded"></textarea>
+        <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+       Send
+        </button>      </form>
+    </section>
+
+  </body>
+</html>
